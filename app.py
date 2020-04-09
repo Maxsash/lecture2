@@ -13,4 +13,9 @@ app = Flask(__name__)
 #special line called a 'decorator'
 @app.route("/")
 def index():
-    return "Hello, there!!"
+    return "Hello, there!!! This is Maxsash."
+
+#adding another route
+@app.route("/maxsash")
+def maxsash():
+    return "What are you doing here??"
