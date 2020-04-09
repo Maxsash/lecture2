@@ -41,6 +41,11 @@ def main():
     for id, name in enumerate(names):
         print(str(id) + name)
 
+    #call to internal function
     for i in range(10):
         print("{} squared is {}".format(i, square(i)))
+
+#if running this file, run main()
+if __name__ == "__main__":
+    main()
 
