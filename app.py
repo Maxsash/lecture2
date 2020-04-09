@@ -1,7 +1,7 @@
 ##This file should either be named app.py or application.py
 ##go to this directory and run 'flash run'
 ##install flask by 'pip install flask'
-from flask import Flask
+from flask import Flask, render_template
 
 #create a new 'Flask' web-application
 #__name__ represents current file
@@ -24,3 +24,8 @@ def maxsash():
 @app.route("/<string:name>")
 def hello(name):
     return f"<h1>What are you doing here, {name}??</h1>"
+
+##render_template
+@app.route("/index")
+def alto():
+    return render_template("hello.html")
