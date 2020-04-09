@@ -35,3 +35,9 @@ for i in range(5):
     print(i)
 for id, name in enumerate(names):
     print(str(id) + name)
+
+#function
+def square(x):
+    return x*x
+for i in range(10):
+    print("{} squared is {}".format(i, square(i)))
