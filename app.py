@@ -2,6 +2,7 @@
 ##go to this directory and run 'flash run'
 ##install flask by 'pip install flask'
 from flask import Flask, render_template
+import datetime
 
 #create a new 'Flask' web-application
 #__name__ represents current file
@@ -36,3 +37,11 @@ def head():
     headline = "Forehead wrinkle is a headline"
     return render_template("hello.html", headline=headline)
 #This will set the 'headline' variable inside hello.html equal to headline variable in this function
+
+#using conditions
+@app.route("/condition")
+def newYear():
+    now = datetime.datetime.now()
+    #boolean expression to check if current month and day is 1
+    new_year = now.month == 1 and now.day == 1
+    return render_template("hello.html", new_year=new_year)

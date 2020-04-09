@@ -5,7 +5,15 @@
     </head>
     <body>
         <h1>Look at my Body!</h1>
-        <h2>What is a headline?</h2>
+        <h2>What is a headline???</h2>
         <h3>{{ headline }}</h3>
+        <!-- These curly braces are from a separate templating language called jinja2-->
+        <h2>Is it New Year though?</h2>
+        <!-- Using if-else in jinja2-->
+        {% if new_year %}
+            <h3>Hell Yeah!!</h3>
+        {% else %}
+            <h3>Nope</h3>
+        {% endif %}
     </body>
 </html>
