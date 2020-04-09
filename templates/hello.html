@@ -8,6 +8,7 @@
         <h2>What is a headline???</h2>
         <h3>{{ headline }}</h3>
         <!-- These curly braces are from a separate templating language called jinja2-->
+        
         <h2>Is it New Year though?</h2>
         <!-- Using if-else in jinja2-->
         {% if new_year %}
@@ -15,5 +16,13 @@
         {% else %}
             <h3>Nope</h3>
         {% endif %}
+
+        <h1>Names</h1>
+        <ul>
+        <!-- Using for loop in jinja2-->
+            {% for name in names %}
+                <li>{{ name }}  </li>
+            {% endfor %}
+        </ul>
     </body>
 </html>

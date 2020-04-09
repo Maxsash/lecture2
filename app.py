@@ -45,3 +45,9 @@ def newYear():
     #boolean expression to check if current month and day is 1
     new_year = now.month == 1 and now.day == 1
     return render_template("hello.html", new_year=new_year)
+
+#using loops
+@app.route("/loop")
+def AliceBob():
+    names = ['Alice', 'Bob', 'Charlie']
+    return render_template("hello.html", names=names)
