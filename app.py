@@ -19,3 +19,8 @@ def index():
 @app.route("/maxsash")
 def maxsash():
     return "What are you doing here??"
+
+#adding a variable
+@app.route("/<string:name>")
+def hello(name):
+    return f"What are you doing here, {name}??"
