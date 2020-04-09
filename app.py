@@ -49,5 +49,10 @@ def newYear():
 #using loops
 @app.route("/loop")
 def AliceBob():
-    names = ['Alice', 'Bob', 'Charlie']
+    names = ['Alice', 'Bob', 'Charlie', 'David']
     return render_template("hello.html", names=names)
+
+#using links | IMPORTANT
+@app.route("/links")
+def linking():
+    return render_template("another.html")
